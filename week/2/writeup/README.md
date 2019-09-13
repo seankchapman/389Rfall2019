@@ -33,10 +33,10 @@ the organization Digital Ocean. Entering wattsamp.net into DNSDumpster also yiel
 ### Part 2 (75 pts)
 
 From the HTML at the `/views/admin.html` endpoint on wattsamp.net, we can see a hint that indicates there is a backend login portal. We know the IP of the website, and earlier we found a hidden open port. Running the command 'nc 157.230.179.99 1337' takes us to this backend portal. We are immediately prompted with a captcha - a simple math problem. Then, the system prompts the user for a username and password to login. We assume that the username is `ejnorman84`, but the password could be anything. However, we have a massive list of 14 million possible passwords. With this information, we can write a Python script called `brute.py` that:
-    ..1. Connects to the backend login portal
-    ..2. Reads in the captcha, solves it, and sends it back to the server
-    ..3. Enters a username and a possible password
-    ..4. Repeats this process until the correct password is found.
+    1. Connects to the backend login portal
+    2. Reads in the captcha, solves it, and sends it back to the server
+    3. Enters a username and a possible password
+    4. Repeats this process until the correct password is found.
 
 We run the script with `python3 brute.py` and after waiting a while, we find the password: `hello1`. We can now login to the backend server
 and navigate the system shell. The flag can `CMSC389R-{!enough_nrg_4_a_str0ng_Pa$$wrd}` can be found in `/home/flag.txt`.
