@@ -39,4 +39,4 @@ From the HTML at the `/views/admin.html` endpoint on wattsamp.net, we can see a 
 4. Repeats this process until the correct password is found.
 
 We run the script with `python3 brute.py` and after waiting a while, we find the password: `hello1`. We can now login to the backend server
-and navigate the system shell. The flag can `CMSC389R-{!enough_nrg_4_a_str0ng_Pa$$wrd}` can be found in `/home/flag.txt`.
+and navigate the system shell. The flag `CMSC389R-{!enough_nrg_4_a_str0ng_Pa$$wrd}` can be found in `/home/flag.txt`.
