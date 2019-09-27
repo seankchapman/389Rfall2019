@@ -1,7 +1,7 @@
 # Writeup 2 - Pentesting
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Sean Chapman
+Section: 0101
 
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment or examination.
 
@@ -11,7 +11,7 @@ Digital acknowledgement: *PUT YOUR NAME HERE*
 
 ### Part 1 (45 pts)
 
-*Please use this space to writeup your answers and solutions (and how you found them!) for part 1.*
+The flag CMSC389R-{p1ng_as_a_$erv1c3} is found by running the command  `1 & cat /home/flag.txt`. To find the flag I first connected to the server and ran the command `1 & ls` to see what directories I could navigate to. I then ran the command `1  & ls /home/` to see what was in the home directory, and that is where I found the flag.txt file. Running `cat` on that file produced the flag.
 
 ### Part 2 (55 pts)
 
