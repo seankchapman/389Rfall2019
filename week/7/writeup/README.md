@@ -12,10 +12,10 @@ Digital acknowledgement: Sean Chapman
 ### Part 1 (100 pts)
 Answer the following questions regarding [this](../image) file:
 
-1. What kind of file is it?
+1. What kind of file is it?</br>
 It is a JPEG image file
 
-2. Where was this photo taken? Provide a city, state and the name of the building in your answer. </br>
+2. Where was this photo taken? Provide a city, state and the name of the building in your answer.</br>
 875 N Michigan Ave, Chicago, IL 60611, John Hancock Center
 
 3. When was this photo taken? Provide a timestamp in your answer.</br>
