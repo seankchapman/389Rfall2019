@@ -27,6 +27,7 @@ Another vulnerability is that a buffer overflow attack is possible on line 68 of
 CMSC389R-{expl017-2-w1n}
 
 4. Describe the process you followed to obtain the flag: vulnerabilities exploited, your inputs to the server in a human-readable format, etc. If you create any helper code please include it.
+
 I first utilized the format string attack that I mentioned in Part 2 in order to find out the password that I could use to gain authentication. To do this, I used the format '%29$s' on the `printf` statement in the cipher function. Doing this yielded the password. I then was able to authenticate the password and gain access to the server with admin privileges. I then explored the server using the command line. Running the `ls` command revealed a file called `flag` in the current directory. I then attempted to run `cat flag` on the file to read its contents, but this was unsuccessful. In order to gain access to the file, I exploited the buffer overflow attack that I mentioned in Part 2. Using the input `cat flag cat flag cat flag` overloaded the buffer and allowed me to read the contents of the flag file.
 
 
